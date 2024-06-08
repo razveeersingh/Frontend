@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: rgb(15, 15, 15);
+            color: azure;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            border: 2px solid black;
+            justify-content: space-between;
+            box-shadow: 0px 2px 4px black;
+        }
+        .logo{
+            padding: 20px;
+        }
+        .right{
+            display: flex;
+            justify-content: space-evenly;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            
+        }
+        .list {
+            font-size: 20px;
+            list-style: none;
+            display: flex;
+        }
+        .dots{
+
+            display: none;
+        }   
+        .ls{
+            padding: 10px;
+        }
+        @media (max-width:560px){
+            .header{
+                font-size: 15px;
+            }
+            .dots{
+                display: block;
+            }  
+            .list{
+                display: none;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <div class="right">
+            <div class="dots">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="list">
+                <li class="ls">home</li>
+                <li class="ls">about</li>
+                <li class="ls">contact us</li>
+                <li class="ls">register</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

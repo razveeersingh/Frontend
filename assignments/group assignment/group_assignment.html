@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .headertop{
+            padding: 10px 0px;
+            background-color: #111111;
+            width: 100%;
+            height: 46px;
+        }
+        .headcontainer{
+            display: flex;
+            margin: auto;
+            width: 1180px;
+            height: 26px;
+        }
+        .headertopleft{
+
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            color: white;
+            font-family: 'nunito sans';
+            font-size: 15px;
+            width: 585px;
+            height: 26px;
+        }
+        .headertopright{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            font-size: 13px;
+            font-family: 'nunito sans';
+            width: 585px;
+            height: 26px;
+            color: white;
+        }
+        .headertopright li{
+            margin: 0px 28px 0px 0px;
+            display: inline-block;
+            list-style: none;
+        }
+        .headertoplinks{
+            letter-spacing: 2px;
+            font-size: 14px;
+            display: flex;
+        }
+        .fa-solid{
+            padding: 0px 12px;
+        }
+        .mheader{
+            display: flex;
+            width: 100%;
+            height: 84px;
+            justify-content: space-evenly;
+            justify-content: center;
+            align-items: center;
+        }
+        .head_logo{
+            width: 262px;
+            height: 100%;
+            padding: 30px 0px;
+        }
+        .head_menu{
+            margin: 0px 40px 0px 50px ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 555px;
+            height: 100%;
+            padding: 25px 0px 25px;
+        }
+        .ul{
+            display: flex;
+            font-size: 18px;
+            font-family: 'nunito sans';
+            list-style: none;
+        }
+        .ul li{
+            padding: 0px 30px;
+        }
+        .headright{
+            width: 262px;
+            height: 100%;
+            padding: 30px 0px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .headright i{
+            padding: 0px 20px;
+        }
+        .headright p{
+            padding: 0px 0px 0px 10px;
+        }
+        .home{
+            height: 800px;
+            background-color: aliceblue;
+            background-image: url('home.jpg');
+            background-size: 100%;
+            
+        }
+        .card{
+            position: relative;
+            left: 350px;
+            top: 200px;
+            height: 550px;
+            width: 460px;
+        }
+        .red{
+            color: red;
+            font-family: 'nunito sans';
+            letter-spacing: 3px;
+            margin: 0px 0px 28px;
+        }
+        .homeh1{
+            color: #111111;
+            font-family: 'nunito sans';
+            font-size: 48px;
+            font-weight: 650;
+            margin: 0px 0px 30px;
+        }
+        .homep{
+            color: rgb(61, 61, 61);
+            font-family: 'nunito sans';
+            font-size: 16px;
+            margin: 0px 0px 35px;
+        }
+        .homebutton{
+            background-color: #111111;
+            color: white;
+            height: 53px;
+            width:  200px;
+            font-family: 'nunito sans';
+            padding: 16px 26px;
+            letter-spacing: 3px;
+            display:flex;
+        }
+        .fa-arrow-right{
+            padding: 0px 8px;
+        }
+        .icons{
+            margin: 150px 0px 0px;
+        }
+        .icons span{
+            margin: 0px 32px 0px 0px;
+        }
+        .discontainer{
+            height: 1180px;
+            width: 100%;
+            padding: 100px 0px;
+            display: flex;
+            justify-content: center;
+        }
+        .display{
+            height: 980px;
+            width: 1170px;    
+        }
+        .shirt{
+            height: 440px;
+            width: 683px;
+            background-color: white;
+            margin: 0px 0px 0px 390px;
+            padding: 0px 15px;
+        }
+        .textshirt{
+            z-index: 2;
+            font-family: 'NUNITO SANS';
+            position: relative;
+            top: 120px;
+        }
+        .textshirt p{
+            font-size: 40px;
+            font-weight: 650;
+            margin: 0px 0px 10px;
+        }
+        .textshirt span{
+            letter-spacing: 3px;
+            font-size: 13px;
+            padding: 3px 0px;
+            font-weight: 700;
+            border-bottom: 2px solid black;
+        }
+        .shirt img{
+            z-index: 1;
+            position: relative;
+            margin-left: 228px;
+            top: -140px;
+        }
+        .specs{
+            height: 540px;
+            width: 490px;
+            padding: 0px 15px;
+        }
+        .specstext{
+            position: relative;
+            top: -80px;
+            font-family: 'nunito sans';
+        }
+        .specstext p{
+            font-size: 40px;
+            font-weight: 650;
+            margin: 0px 0px 10px;
+        }
+        .specstext span{
+            letter-spacing: 3px;
+            font-size: 13px;
+            padding: 3px 0px;
+            font-weight: 700;
+            border-bottom: 2px solid black;
+        }
+        .specsimg{
+            position: relative;
+            top: -80px;
+        }
+        .shoes{
+            position: relative;
+            height: 440px;
+            width: 650px;
+            right: -521px;
+            top: -440px;
+        }
+        .shoesimg{
+            z-index: 1;
+            position: relative;
+            right: -170px;
+        }
+        .shoestext{
+            z-index: 2;
+            position: relative;
+            font-family: 'NUNITO SANS';
+            top: -310px;
+            left: -20px;
+        }
+        .shoestext p{
+            font-size: 40px;
+            font-weight: 650;
+            margin: 0px 0px 10px;
+        }
+        .shoestext span{
+            letter-spacing: 3px;
+            font-size: 13px;
+            padding: 3px 0px;
+            font-weight: 700;
+            border-bottom: 2px solid black;
+        }
+        .shop{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 940px;
+            width: 100%;
+        }
+        .shophead{
+            display: flex;
+            justify-content: center;
+            height: 80px;
+            width: 1170px;
+            padding: 0px 15px;
+            font-family: 'nunito sans';
+        }
+        .shophead ul li{
+            list-style: none;
+            font-size: 24px;
+            font-weight: 800;
+        }
+        .shophead ul{
+            height: 36px;
+            width: 1980px;
+            display: flex;
+            justify-content: center;
+        }
+        #best{
+            margin-right: 88px;
+        }
+        #new{
+            margin-right: 88px;
+            opacity: 50%;
+        }
+        #hot{
+            opacity: 50%;
+        }
+        .shoplist{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1160px;
+        }
+        .item{
+            padding: 0px 15px;
+            width: 290px;
+            height: 400px;
+        }
+        .imgitem{
+            width: 260px;
+        }
+        .itemtext{
+            font-family: 'nunito sans';
+            padding: 25px 0px 0px;
+        }
+        .p1{
+            font-size: 15px;
+            margin: 0px 0px 5px;
+        }
+        .star{
+            margin: 0px 0px 6px;
+        }
+        .money{
+            font-weight: 800;
+        }
+        .fa-star{
+            height: 15px;
+            width: 15px;
+        }
+        .deal{
+            height: 620px;
+            width: 100%;
+            background-color: #f3f2ee;  
+            padding: 150px 0px 125px;
+        }
+        .left{
+            background-color: #ffffff;
+            width: 535px;
+            height: 300px;
+            position: relative;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 250px;
+        }
+        .categories{
+            position: relative;
+            font-family: 'nunito sans';
+            left: 452px;
+           top: 52px;
+        }
+        .categories p{
+            letter-spacing: 1px;
+            width: fit-content;
+            font-size: 34px;
+            font-weight: 650;
+            margin: 25px 0px;
+        }
+        #gray{
+            color: #b7b7b7;
+        }
+        .bag{
+            position: relative;
+            width: fit-content;
+            top: -270px;
+            left: 783px;
+        }
+        .saletag{
+            font-family: 'nunito sans';
+            color: white;
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            background-color: #111111;
+            position: relative;
+            top: -619px;
+            left: 1025px;
+        }
+        .salep{
+            position: relative;
+            top: 22px;
+            left: 25px
+        }
+        .sale{
+            width: fit-content;
+        }
+        .price{
+            position: relative;
+            font-size: 20px;
+            width: fit-content;
+            font-weight: 700;
+            margin-top: 5px;
+            left: -8px;
+        }
+        .right{
+            width: 340px;
+            height: 360px;
+            position: relative;
+            left: 1312px;
+            top: -742px;
+        }
+        .redright{
+            color: red;
+            font-family: 'nunito sans';
+            letter-spacing: 3px;
+            font-size: 14px;
+            margin: 0px 0px 15px;
+            font-weight: 600;
+        }
+        .righthead{
+            color: #111111;
+            font-size: 36px;
+            margin: 0px 0px 25px;
+            font-family: 'nunito sans';
+            font-weight: 700;
+        }
+        .rightbutton{
+            color: #ffffff;
+            background-color: #111111;
+            font-family: 'nunito sans';
+            letter-spacing: 3px;
+            font-weight: 600;
+            width: fit-content;
+            padding: 18px 23px;
+            margin-top: 170px;
+        }
+        .instagram{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'nunito sans';
+            width: 100%;
+            height: 622px;
+            padding-top: 100px;
+        }
+        .inphotos{
+            width: 780px;
+            height: 522px;
+            padding: 0px 15px;
+        }
+        .insta-right{
+            height: 552px;
+            width: 390px;
+            padding: 0px 15px;
+            height: fit-content;
+        }
+        .insta{
+            font-size: 36px;
+            font-weight: 720;
+            letter-spacing: 1px;
+            margin: 0px 0px 30px;
+        }
+        .lore{
+            font-size: 15px;
+            font-weight: 300;
+            margin: 0px 0px 65px;
+        }
+        .hash{
+            font-size: 30px;
+            font-weight: 680;
+            color: red;
+        }
+        .news{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'nunito sans';
+            height: 740px;
+            width: 100%;
+            padding: 100px 0px;
+        }
+        .contant{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 1170px;
+            height: 127px;
+            padding: 0px 15px;
+            margin-bottom: 50px ;
+        }
+        .latest{
+            margin: 0px 0px 15px;
+            color: red;
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            }
+        .fashion{
+            letter-spacing: 1px;
+            font-size: 36px;
+            font-weight: 650;
+        }
+        .newscontainer{
+            display: flex;
+            width: 1170px;
+            height: 457px;
+        }
+        .newscard{
+            width: 390px;
+            height: 457px;
+            padding: 0px 15px;
+        }
+        .incard{
+            position: relative;
+            z-index: 2;
+            background-color: #ffffff;
+            height: 177px;
+            width: 300px;
+            margin: -35px 30px 0px;
+            padding: 30px 30px 25px;
+        }
+        .spannews{
+            font-size: 13px;
+            font-weight: 300;
+            height: 19.5px;
+            margin: 0px 0px 10px;
+        }
+        .newscard p{
+            font-weight: 720;
+            font-size: 18px;
+            margin: 15px 0px 15px;
+        }
+        .but-news{
+            width: fit-content;
+            letter-spacing: 3px;
+            font-size: 13px;
+            border-bottom: 2px solid black;
+        }
+        .imgcard {
+            position: relative;
+            z-index: 1;
+        }
+        .footer{
+            color: #f3f2ee;
+            font-family: 'nunito sans';
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 390px;
+            background-color: #111111;
+            padding: 70px 0px 0px;
+        }
+        .up{
+            display: flex;
+            height: 214px;
+            width: 1140px;
+        }
+        .low{
+            position: relative;
+            top: -16px;
+            background-color: #111111;
+            margin: 60px 0px 0px;
+            padding: 20px 0px;
+            height: 66px;
+            width: 1140px;
+        }
+        .logo{
+            width: 292.5px;
+            height: 214.22px;
+            padding: 0px 15px;
+        }
+        .imgfoot{
+            width: 265.2px;
+            height: 24.61px;
+            margin: 0px 0px 36px;
+        }
+        .foot-p{
+            color: #b7b7b7;
+            width: 262.5px;
+            height: 75px;
+            margin: 0px 0
+            px 30px;
+        }
+        .shop1{
+            height: 214.22px;
+            width: 195px;
+            padding: 0px 15px;
+            margin: 0px 0px 0px 97.5px;
+        }
+        .shop1 h6{
+            font-size: 15px;
+            margin: 0px 0px 23px;
+            letter-spacing: 3PX;
+        }
+        .shop1 ul{
+            list-style: none;
+            color: #b7b7b7;
+        }
+        .lifoot{
+            font-size: 15px;
+            height: 36px;
+            width: 165px;
+        }
+        #s2{
+            margin: 0px;
+        }
+        .newsletter{
+            height: 214.22px;
+            width: 292.5px;
+            margin: 0px 0px 0px 97.5px;
+            padding: 0px 15px;
+        }
+        .newsletter h6{
+            font-size: 15px;
+            margin: 0px 0px 23px;
+            letter-spacing: 3PX;
+        }
+        .newsletter p{
+            font-size: 15px;
+            color: #b7b7b7;
+        }
+        .input1 input{
+            width: 100%;
+            border: 0px;
+            border-bottom: 1px solid #f3f2ee;
+            background-color: #111111;
+        }
+        .input1{
+            height: 54.5px;
+            width: 262.5px;
+            padding: 30px 0px;
+
+        }
+        .input-text{
+            width: fit-content;
+            position: relative;
+            top: 10px;
+            left: 23px;
+            opacity: 50%;
+            font-weight: 50;
+        }
+        .env{
+            position: relative;
+            top: -33px;
+            left: 230px;
+        }
+        .lowtext{
+            color: #b7b7b7;
+            padding: 0px 262px;
+        }
+        .cards{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="headertop">
+        <div class="headcontainer">
+            <div class="headertopleft"><p>Free shipping, 30-day return or refund guarantee.</p></div>
+                <div class="headertopright">
+                    <div class="headertoplinks">
+                        <ul>
+                            <li>SIGN IN</li>
+                            <li> FAQs</li>  
+                        </ul>
+                        <P>USD<i class="fa-solid fa-angle-down"></i></P>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="mheader">
+            <div class="head_logo"><img src="https://themewagon.github.io/malefashion/img/logo.png" alt=""></div>
+            <div class="head_menu">
+                <div class="ul">
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>Pages</li>
+                    <li>Blog</li>
+                    <li>Contacts</li>
+                </div>
+            </div>
+            <div class="headright">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>$ 0.00</p>
+            </div>
+    </div>
+    <div class="home">
+        <div class="card">
+            <div class="red">SUMMER COLLECTION</div>
+            <div class="homeh1">Fall - Winter<br>Collections 2030</div>
+            <div class="homep">A specialist creating luxury essentials.Ethically crafted <br> with an unwavering commitment to exwptional quality</div>
+            <div class="homebutton"><p>SHOP NOW</p><span><i class="fa-solid fa-arrow-right"></i></span></div>
+            <div class="icons">
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-pinterest"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="discontainer">
+        <div class="display">
+            <div class="shirt">
+                <div class="textshirt">
+                    <p>Clothing<br>Collections 2030</p>
+                    <span>SHOP NOW</span>
+                </div>
+                <img src="https://themewagon.github.io/malefashion/img/banner/banner-1.jpg" alt="">
+            </div>
+            <div class="specs">
+                <img class="specsimg" src="https://themewagon.github.io/malefashion/img/banner/banner-2.jpg" alt="">
+                <div class="specstext">
+                    <p>Accessories</p>
+                    <span>SHOP NOW</span>
+                </div>
+            </div>
+            <div class="shoes">
+                <img class="shoesimg" src="https://themewagon.github.io/malefashion/img/banner/banner-3.jpg" alt="">
+                <div class="shoestext">
+                    <p>Shoes Spring<br>2030</p>
+                    <span>SHOP NOW</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shop">
+        <div class="shophead">
+            <ul>
+                <li id="best">Best Sellers</li>
+                <li id="new">New Arrivals</li>
+                <li id="hot">Hot Sales</li>
+            </ul>
+        </div>
+        <div class="shoplist">
+            <div class="item">
+                <img src="shoe 1.jpg" alt="" class="imgitem">
+                <div class="itemtext">
+                    <p class="p1">Nike Air Max</p>
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <p class="money">$67.24</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="shoe 1.jpg" alt="" class="imgitem">
+                <div class="itemtext">
+                    <p class="p1">Nike Air Max</p>
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <p class="money">$67.24</p>
+                </div>
+            </div>
+            <div class="item"><img src="shoe 1.jpg" alt="" class="imgitem">
+                <div class="itemtext">
+                    <p class="p1">Nike Air Max</p>
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <p class="money">$67.24</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="shoe 1.jpg" alt="" class="imgitem">
+                <div class="itemtext">
+                    <p class="p1">Nike Air Max</p>
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <p class="money">$67.24</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="shoe 1.jpg" alt="" class="imgitem">
+                <div class="itemtext">
+                    <p class="p1">Nike Air Max</p>
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <p class="money">$67.24</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="shoe 1.jpg" alt="" class="imgitem">
+                <div class="itemtext">
+                    <p class="p1">Nike Air Max</p>
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <p class="money">$67.24</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="shoe 1.jpg" alt="" class="imgitem">
+                <div class="itemtext">
+                    <p class="p1">Nike Air Max</p>
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <p class="money">$67.24</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="shoe 1.jpg" alt="" class="imgitem">
+                <div class="itemtext">
+                    <p class="p1">Nike Air Max</p>
+                    <div class="star"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <p class="money">$67.24</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="deal">
+        <div class="left">
+            <div class="categories">
+                    <p id="gray">Clothing hots</p>
+                    <p>Shoe collections</p>
+                    <p id="gray">Accessories</p>
+            </div>
+        </div>
+        <div class="bag"><img src="https://themewagon.github.io/malefashion/img/product-sale.png" alt=""></div>
+        <div class="saletag">
+            <div class="salep">
+                <p class="sale">Sale of</p>
+                <p class="price">$29.99</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="redright">DEAL OF THE WEEK</div>
+            <div class="righthead">Multi-pocket Chest<br>Big Black</div>
+            <div class="rightbutton">SHOP NOW</div>
+        </div>
+    </div>
+    <div class="instagram">
+        <div class="inphotos">
+            <img src="Screenshot 2024-06-05 100525.png" alt="" class="inside">
+        </div>
+        <div class="insta-right">
+            <div class="instatext">
+                <p class="insta">Instagram</p>
+            </div>
+            <div class="lorem">
+                <p class="lore">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="hashtag">
+                <p class="hash">#Male_fashion</p>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="contant">
+            <div class="latest">
+                <p>LATEST NEWS</p>
+            </div>
+            <div class="fashion">
+                <p>Fashion New Trends</p>
+            </div>
+        </div>
+        <div class="newscontainer">
+            <div class="newscard">
+                <img src="coffee.jpg" alt="" class="imgcard">
+                <div class="incard">
+                    <span class="spannews"><i class="fa-regular fa-calendar"></i> 16 february 2020</span>
+                    <p>What Curling Irons Are The Best Ones</p>
+                    <div class="but-news">READ MORE</div>
+                </div>
+            </div>
+            <div class="newscard">
+                <img src="coffee.jpg" alt="" class="imgcard">
+                <div class="incard">
+                    <span class="spannews"><i class="fa-regular fa-calendar"></i> 16 february 2020</span>
+                    <p>What Curling Irons Are The Best Ones</p>
+                    <div class="but-news">READ MORE</div>
+                </div>
+            </div>
+            <div class="newscard">
+                <img src="coffee.jpg" alt="" class="imgcard">
+                <div class="incard">
+                    <span class="spannews"><i class="fa-regular fa-calendar"></i> 16 february 2020</span>
+                    <p>What Curling Irons Are The Best Ones</p>
+                    <div class="but-news">READ MORE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="up">
+            <div class="logo">
+                <div class="imgfoot"><img src="https://themewagon.github.io/malefashion/img/footer-logo.png" alt=""></div>
+                <div class="foot-p">The customer is at the heart of our unique business model, which includes design.</div>
+                <div class="img-foot">
+                    <img src="https://themewagon.github.io/malefashion/img/payment.png" alt="" class="cards">
+                </div>
+            </div>
+            <div class="shop1">
+                <h6>SHOPPING</h6>
+                <ul>
+                    <li class="lifoot">Clothing store</li>
+                    <li class="lifoot">Trending store</li>
+                    <li class="lifoot">Accessories</li>
+                    <li class="lifoot">Sale</li>
+                </ul>
+            </div>
+            <div class="shop1" id="s2">
+                <h6>SHOPPING</h6>
+                <ul>
+                    <li class="lifoot">Contact us</li>
+                    <li class="lifoot">Payment Methods</li>
+                    <li class="lifoot">Delivary</li>
+                    <li class="lifoot">Return & exchange</li>
+                </ul>   
+            </div>
+            <div class="newsletter">
+                <h6>NEWSLETTER</h6>
+                <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                <div class="input1">
+                    <div class="input-text">Your email</div>
+                    <input type="text">
+                    <div class="env"><i class="fa-regular fa-envelope"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="low">
+            <div class="lowtext">
+                Copyright © 20242020 All rights reserved | This template is made with  by Colorlib
+            </div>
+        </div>
+    </div>
+</body>
+</html>

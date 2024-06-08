@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(62, 62,62);
+            height: 100vh;
+            display: flex;
+        }
+        .left{
+            /* background-color: rgb(255, 0, 0); */
+            height: 100vh;
+            width: 848px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;justify-content: space-evenly;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+            width: 352px;
+        }
+        .mid{
+            display: flex;
+            height: 100vhpx;
+            width: 720px;
+            justify-content: center;
+            align-items: center;
+        }
+        .name{
+            border-radius: 60px;
+            background-color: rgb(217, 217, 217);
+            height: 338px;
+            width: 797px;
+        }
+        .posts{
+            display: flex;
+            flex-direction: column;
+            border-radius: 60px;
+            background-color: rgb(217, 217, 217);
+            height: 525px;
+            width: 797px;
+        }
+        .home{
+            display: flex;
+            flex-direction: column;
+            border-radius: 60px;
+            background-color: rgb(217, 217, 217);
+            height: 890px;
+            width: 697px;
+        }
+        .homestories{
+            display: flex;
+            height: 140px;
+            width: 697px;
+            border-bottom:2px solid rgb(121, 121, 121) ;
+            border-radius: 60px 60px 0px 0px;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: 0px 4px 3px -3px rgb(66, 66, 66);
+        }
+        .view{
+            overflow: scroll;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 0px 0px 60px 60px;
+            height: 750px;
+            width: 697px;
+        }
+        .circles{
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            background-color: white;
+            box-shadow: 0px 4px 4px rgb(66, 66, 66);
+            overflow: hidden;
+        }
+        .image{
+            height: 320px;
+            width: 320px;
+            border-radius: 100%;
+        }
+        
+        .bio{
+            height: 160px;
+            width: 320px;
+            background-color: rgb(217, 217, 217);
+            border-radius: 50px;
+        }
+        .about{
+            width: 320px;
+            height: 350px;
+            background-color: rgb(217, 217, 217);
+            border-radius: 60px;
+        }
+        .logo{
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            top: 285px;
+            left: 737px;
+            border-radius: 100%;
+            box-shadow: 0px 4px 4px rgb(66, 66, 66);
+        }
+        .fullname{
+            position: absolute;
+            top: 45px;
+            left: 65px;
+            font-size: 65px;
+            font-family: 'poppins';
+            font-weight: 600;
+        }
+        .aboutme{
+            width: 600px;
+            position: absolute;
+            top: 160px;
+            left: 65px;
+            font-family: 'poppins';
+            font-size: 16px;
+            font-weight: 300;
+        }
+        .header{
+            border-radius: 60px 60px 0px 0px;
+            background-color: rgb(177, 177, 177);
+            height: 90px;
+            width: 797px;
+            box-shadow: 0px 4px 4px rgb(66, 66, 66);
+            border-bottom:2px solid rgb(121, 121, 121) ;
+        }
+        #post{
+            height: 60px ;
+            width: 60px;
+            position: absolute;
+            top: 420px;
+            left: 60px;
+        }
+        .postext{
+            font-family: 'poppins';
+            position: absolute;
+            top: 426px;
+            left: 145px;
+            font-size: 35px;
+            font-weight: 500;
+        }
+        .post-container{
+            display: flex;
+            border-radius: 0px 0px 60px 60px; 
+            height: 435px;
+            width: 797px;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+            overflow-y: scroll ;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .postimg{
+            margin: -3px;
+            width: 265px;
+            height: 265px;
+            border: 2px solid black;
+
+        }
+        .insta{
+            position: relative;
+            top: 50%;
+            left: 51%;
+            transform: translate(-50%,-50%);
+            height: 70px;
+            width: 70px;
+            border-radius: 100%;
+            background-color: white;
+            /* box-shadow: 0px 4px 4px rgb(66, 66, 66); */
+        }
+        #lin{
+            height: 130px;
+            width: 130px;
+        }
+        #git{
+            height: 90px;
+            width: 90px;
+        }
+        .standout{
+            height: 500px;
+            width: 500px;
+            border-radius: 60px ;
+            margin-top: 30px ;
+            margin-bottom: 50px;
+        }
+        #p1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grad{
+            position: relative;
+            top: -550px;
+            border-radius: 60px 60px 0px 0px;
+            height: 104px;
+            width: 500px;
+            background-image: linear-gradient(black,rgba(255,0,0,0));
+        }
+        .logopost{
+            position: relative;
+            top: -317px;
+            left: 10px;
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="name">
+                <div class="fullname">RAJVEER SINGH</div>
+                <div class="aboutme">Hello everyonn! I'm Rajveer singh a Graphic designer, frontend developer, and sometimes a beatboxer. I like to explore and learn things a lot this is my small approach to dive into the world of web designing and i hope you like my style.</div>
+                <img src="annihilate .jpg" alt="image not found" class="logo">
+            </div>
+            <div class="posts">
+                <div class="header">
+                    <img src="annihilate .jpg" alt="image not found" class="logo" id="post">
+                    <div class="postext">POSTS</div>
+                </div>
+                <div class="post-container">
+                    <div class="postimg"><img src="dead.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="kanye copy 1.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="suicide note.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="xxxtentacion .jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="threats 1.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="girte bhue.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="grew up.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="gradient.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="break it.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="artharth.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="amnesia.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="j-town.jpg" alt="" class="postimg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="home">
+                <div class="homestories">
+                    <a href="https://www.instagram.com/razveeersingh/"><div class="circles"><img src="https://i.pinimg.com/564x/7d/36/9f/7d369fb78ad668867000c0d987a1b70d.jpg" alt="" class="insta"></div></a>
+                    <a href="https://www.linkedin.com/in/rajveer-singh-6b859a2a6/"><div class="circles"><img src="https://i.pinimg.com/564x/70/12/18/701218a0c48418468c9e532ca31a2337.jpg" alt="" class="insta" id="lin"></div></a>
+                    <a href="https://github.com/razveeersingh"><div class="circles"><img src="https://i.pinimg.com/564x/cf/5f/7d/cf5f7dca8d30d52a39f4043f3796d7f0.jpg" alt="" class="insta" id="git"></div></a>
+                    <a href="https://www.youtube.com/channel/UCyijCbufwgwkMvlgTRnFTXw"><div class="circles"><img src="https://i.pinimg.com/564x/de/b4/93/deb493608dae9e533ef6b6894095b797.jpg" alt="" class="insta" id="yt"></div></a>
+                </div>
+                <div class="view">
+                    <div class="standout">
+                        <div><img src="create .jpg" alt="" class="standout" id="p1">
+                            <div class="grad"></div>
+                            <div class="logopost"><img src="annihilate .jpg" class="logopost" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="standout">
+                        <div><img src="starz.jpg" alt="" class="standout" id="p1">
+                            <div class="grad"></div>
+                            <div class="logopost"><img src="annihilate .jpg" class="logopost" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="standout">
+                        <div><img src="treats.jpg" alt="" class="standout" id="p1">
+                            <div class="grad"></div>
+                            <div class="logopost"><img src="annihilate .jpg" class="logopost" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="standout">
+                        <div><img src="stay.jpg" alt="" class="standout" id="p1">
+                            <div class="grad"></div>
+                            <div class="logopost"><img src="annihilate .jpg" class="logopost" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="standout">
+                        <div><img src="redundancy.jpg" alt="" class="standout" id="p1">
+                            <div class="grad"></div>
+                            <div class="logopost"><img src="annihilate .jpg" class="logopost" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="image"><img src="annihilate .jpg" alt="image not found" class="image"></div>
+            <div class="bio"></div>
+            <div class="about"></div>
+        </div>
+    </div>
+</body>
+</html>

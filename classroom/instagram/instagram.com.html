@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        margin-left:335px ;
+        display: flex;
+        background-color: black;
+    }
+    .bar ul{
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        margin: 70px 10px;
+    }
+    .bar li{
+        font-weight: 220;
+        font-family: 'Poppins';
+        list-style: none;
+        padding: 12px;
+        margin: 12px 0px;
+        
+    }
+    .bar{
+        position: fixed;
+        background-color: black;
+        height: 100vh;
+        width: 335px;
+        border-right: 2px solid rgb(22, 22, 22);
+    }
+    .logo{
+        margin-left:1   0px ;
+        width: 140px;
+    }
+    .pro{
+        height: 30px;
+        width: 30px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 100%;
+    }
+    .profile{
+        display: inline-block;
+    }
+    .list{
+        margin-left: 15px ;
+    }
+    .pro{
+        display: inline-block;
+        border: 1px solid white;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+    }
+    #pr{
+        position: relative;
+        margin-left: 10px;
+        top: -5.3px;
+    }
+    .barlower ul li{
+        font-family: 'poppins';
+        color: white;
+        font-weight: 220;
+        font-size: 20px;
+        padding: 12px;
+        margin: 12px 0px;
+    }
+    .barlower ul{
+        margin: 0px 10px;
+        margin-top: 150px;   
+    }
+    .right{
+        display: flex;
+        width: 1200px;
+        flex-wrap: wrap;
+        margin: auto;
+        height: 100%;
+    }
+    .pfp1{
+        height: 175px;
+        border-radius: 100%;
+        border: 4px solid black;
+        box-shadow: 0px 0px 0px 4px rgb(44, 44, 44);
+    }
+    .pfp{
+        height: 350px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .right1{
+        padding-top: 50px;
+        height: 350px;
+        width: 650px;
+    }
+    .pname{
+        color: white;
+        font-family: 'poppins';
+    }
+    .fa-solid{
+        color: white;
+
+    }
+    .button{height: 30px;
+        font-size: 12px;
+        color: white;
+        border-radius: 8px;
+        padding: 0px 15px;
+        background-color: rgb(77, 77, 77);
+        font-family: 'poppins';
+    }
+    .center{
+        position: relative;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+    }
+    .follows{
+        font-weight: 300;
+        margin: 20px 0px;
+        color: white;
+        font-family: 'poppins';
+        display: flex;
+        justify-content: space-between;
+        width:60%;
+    }
+    .b{
+        font-weight: 500;
+    }
+    .bio{
+        color: white;
+        font-family: 'poppins';
+        font-size: 15px;
+        font-weight: 250;
+    }
+    .nickname{
+        font-weight: 500;
+    }
+    .threads{
+        font-size: 12px ;
+        background-color:rgb(77, 77, 77) ;
+        width: fit-content;
+        border-radius: 20px;
+        height: fit-content;    
+    }
+    .threads1{
+        margin: 4px;
+        padding: 4px;
+        font-weight: 350;
+    }
+    .profession{
+        color: rgb(114, 114, 114);
+        font-weight: 400;
+    }
+    .highlights{
+        display: flex;
+        height: 200px;
+        width: 100%;
+        border-bottom: 1px solid rgb(22, 22, 22);
+        
+    }
+    .posts{
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow-y: hidden ;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .hlight{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        
+    }
+    .hlight img{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: 1px solid black;
+        box-shadow: 0px 0px 0px 1px rgb(44, 44, 44);
+        
+    }
+    .hlight span{
+        font-size: 11px;
+        font-family: 'poppins';
+        color: white;
+        padding: 20px;
+    }
+    .postimg{
+        height: 400px;
+        width: 400px;
+        padding: 5px;
+    }
+</style>
+<body>
+    <div class="bar">
+        <div class="logo"><img src="insta vector copy.svg" alt="logo" class="insta"></div>
+
+        <ul>
+            <li>
+                <span><i class="fa-solid fa-house"></i></span>
+                <span class="list">Home</span>
+            </li>
+            <li>
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span class="list">Search</span>
+            </li>
+            <li>
+                <span><i class="fa-regular fa-compass"></i></span>
+                <span class="list">Explore</span>
+            </li>
+            <li>
+                <span><i class="fa-solid fa-clapperboard"></i></span>
+                <span class="list">Reels</span>
+            </li>
+            <li>
+                <span><i class="fa-solid fa-message"></i></span>
+                <span class="list">Messages</span>
+            </li>
+            <li>
+                <span><i class="fa-regular fa-heart"></i></span>
+                <span class="list">Notification</span>
+            </li>
+            <li>
+                <span><i class="fa-solid fa-plus"></i></span>
+                <span class="list">Create</span>
+            </li>
+            <li>
+                <span><div class="pro"><img src="Untitled-2 copy.jpg" alt="" class="pro"></div></span>
+                <span class="list" id="pr">Profile</span>
+            </li>
+            
+        </ul>
+        <div class="barlower">
+            <ul>
+                <li>
+                    <span><i class="fa-solid fa-at"></i></span>
+                    <span class="list">Threads</span>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-bars"></i></span>
+                    <span class="list">More</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="right">
+            <div class="pfp"><img class="pfp1" src="Untitled-2 copy.jpg" alt=""></div>
+            <div class="right1">
+                <div class="name">
+                    <div class="pname"><div class="center">razveeersingh</div></div>
+                    <div class="button"><div class="center">Edit profile</div></div>
+                    <div class="button"> <div class="center">archive</div></div>
+                    <div class="button"><div class="center">Ad tools</div></div>
+                    <span><i class="fa-solid fa-gear center"></i>  </span>
+                </div>
+                <div class="follows">
+                    <div class="post"><b class="b">32</b> posts </div>
+                    <div class="followers"><b class="b">583</b> followers</div>
+                    <div class="following"><b class="b">556</b> following</div>
+                </div>
+                <div class="bio">
+                    <div class="nickname">Raaz?</div>
+                    <div class="threads"><p class="threads1">@razveeersingh</p></div>
+                    <div class="profession">Beatboxer</div>
+                    <div class="bio-text">love. <br>lose. <br> be kind. <br> @razveer.psd</div>
+                </div> 
+            </div>
+            <div class="highlights">
+                <div class="hlight"><img src="create .jpg" alt="" class="hlight"><span>photos?</span></div>
+                <div class="hlight"><img src="artharth.jpg" alt="" class="hlight"><span>music</span></div>
+                <div class="hlight"><img src="plus copy.jpg" alt="" class="hlight"><span>New</span></div>
+            </div>
+            <div class="posts">
+                    <div class="postimg"><img src="dead.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="kanye copy 1.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="suicide note.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="xxxtentacion .jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="threats 1.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="girte bhue.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="grew up.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="gradient.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="break it.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="artharth.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="amnesia.jpg" alt="" class="postimg"></div>
+                    <div class="postimg"><img src="j-town.jpg" alt="" class="postimg"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
